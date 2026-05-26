@@ -1,2 +1,4 @@
 prd.md
-.agents
+.agents/
+dist/
+node_modules/
