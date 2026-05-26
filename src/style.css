@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom minimalist scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #e6dfd3;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d0c5b4;
+}
+
+/* Custom styles for highlighted search text */
+mark {
+  background-color: rgba(245, 158, 11, 0.3); /* warm amber highlight */
+  border-bottom: 2px solid rgba(245, 158, 11, 0.7);
+  color: inherit;
+  padding: 0 2px;
+  border-radius: 2px;
+}

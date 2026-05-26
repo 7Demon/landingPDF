@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quietude Library - Curated Collection</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="A premium curated library to read publications, policy research, and macroeconomic analysis by Ferry Irwandi.">
+  
+  <!-- Google Fonts for Premium Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Local Tailwind CSS -->
+  <script type="module" crossorigin src="/assets/index-XueM-MZr.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-lcU9PIUs.css">
+</head>
+<body class="bg-[#fbf8f3] text-[#1a1a1a] font-sans min-h-screen antialiased flex flex-col md:flex-row">
+
+  <!-- Sidebar Navigasi (Left) -->
+  <aside class="w-full md:w-64 lg:w-72 bg-[#fbf8f3] border-b md:border-b-0 md:border-r border-stone-200 p-8 flex flex-col justify-between shrink-0">
+    <div class="space-y-12">
+      <!-- Branding / Logo -->
+      <div>
+        <h1 class="font-serif text-4xl tracking-tight text-stone-900">Quietude</h1>
+        <p class="text-xs tracking-widest uppercase text-stone-400 mt-2 font-medium">Library</p>
+        <p class="text-[11px] text-stone-400 mt-1 italic">Your curated collection</p>
+      </div>
+
+      <!-- Navigation Menu -->
+      <nav id="sidebar-menu" class="space-y-2">
+        <!-- Collections link (Active State by default) -->
+        <a href="#" id="menu-collections" class="flex items-center space-x-3 text-stone-900 bg-[#f5efe6] transition-colors duration-150 py-1.5 px-3 rounded-md font-medium">
+          <svg class="w-4 h-4 text-stone-700" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-19.5 0A2.25 2.25 0 003 15v1.5a2.25 2.25 0 002.25 2.25h13.5A2.25 2.25 0 0021 16.5V15a2.25 2.25 0 00-2.25-2.25m-16.5 0h16.5M12 9.75V3" />
+          </svg>
+          <span class="text-[14px] tracking-wide">Collections</span>
+        </a>
+
+        <!-- Divider / Label -->
+        <div class="pt-4 pb-1">
+          <span class="text-[9px] uppercase tracking-wider font-semibold text-stone-400 block px-3">Documents</span>
+        </div>
+
+        <!-- Document 1: Makroekonomi 2026 -->
+        <a href="#" id="menu-doc-macro" data-doc-id="analisis_makroekonomi_indonesia_2026" class="sidebar-doc-link flex items-center space-x-3 text-stone-500 hover:text-stone-900 transition-colors duration-150 py-1.5 px-3 rounded-md hover:bg-stone-100/50">
+          <svg class="w-4 h-4 shrink-0 text-stone-400" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+          </svg>
+          <span class="text-[13.5px] font-medium tracking-wide truncate">Makroekonomi 2026</span>
+        </a>
+
+        <!-- Document 2: CEA MBG -->
+        <a href="#" id="menu-doc-mbg" data-doc-id="cost_effectiveness_analysis_mbg" class="sidebar-doc-link flex items-center space-x-3 text-stone-500 hover:text-stone-900 transition-colors duration-150 py-1.5 px-3 rounded-md hover:bg-stone-100/50">
+          <svg class="w-4 h-4 shrink-0 text-stone-400" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+          </svg>
+          <span class="text-[13.5px] font-medium tracking-wide truncate">Cost Effectiveness MBG</span>
+        </a>
+
+        <!-- Document 3: Reformasi Subsidi -->
+        <a href="#" id="menu-doc-subsidi" data-doc-id="perhitungan_reformasi_subsidi_indonesia" class="sidebar-doc-link flex items-center space-x-3 text-stone-500 hover:text-stone-900 transition-colors duration-150 py-1.5 px-3 rounded-md hover:bg-stone-100/50">
+          <svg class="w-4 h-4 shrink-0 text-stone-400" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+          </svg>
+          <span class="text-[13.5px] font-medium tracking-wide truncate">Reformasi Subsidi</span>
+        </a>
+      </nav>
+    </div>
+
+    <!-- Bottom Settings Link -->
+    <div class="mt-12 md:mt-0">
+      <a href="#" id="menu-settings" class="flex items-center space-x-3 text-stone-500 hover:text-stone-900 transition-colors duration-150 py-1.5 px-3 rounded-md hover:bg-stone-100/50">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.43l-1.003.828c-.293.241-.438.613-.43.992a7.723 7.723 0 010 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.43l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.991l-1.004-.827a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.645-.869l.214-1.28z" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+        <span class="text-[14px] font-medium tracking-wide">Settings</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Main View Area (Right) -->
+  <main class="flex-1 bg-white p-8 md:p-12 lg:p-16 flex flex-col justify-between min-h-screen">
+    
+    <!-- View 1: Curated Collections List (Default) -->
+    <div id="dashboard-view" class="w-full max-w-5xl mx-auto space-y-12">
+      <!-- Search & Title Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-stone-100 pb-6">
+        <div>
+          <h2 class="font-serif text-4xl lg:text-5xl text-stone-900 tracking-tight">Curated Collection</h2>
+        </div>
+        <!-- Search Input -->
+        <div class="relative w-full md:w-80 lg:w-96">
+          <input 
+            type="text" 
+            id="search-input" 
+            placeholder="Search authors, titles..." 
+            class="w-full py-2.5 pl-4 pr-10 bg-stone-50 border border-stone-200 rounded-md text-sm placeholder-stone-400 focus:outline-none focus:border-stone-400 focus:bg-white transition-all duration-150"
+          >
+          <span class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none text-stone-400">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </span>
+        </div>
+      </div>
+
+      <!-- Document Cards Grid -->
+      <div id="document-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Cards will be dynamically generated by main.js -->
+        <!-- Loading state by default -->
+        <div class="col-span-full py-16 text-center text-stone-400 font-medium">
+          Loading library collection...
+        </div>
+      </div>
+    </div>
+
+    <!-- View 2: Elegant Reading Mode (Hidden by default) -->
+    <div id="reading-view" class="hidden w-full max-w-7xl mx-auto flex-col h-[calc(100vh-8rem)]">
+      <!-- Reading Mode Header -->
+      <div class="flex items-center justify-between border-b border-stone-200 pb-4 mb-6">
+        <button id="back-button" class="flex items-center space-x-2 text-stone-600 hover:text-stone-900 transition-colors font-medium text-sm">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          </svg>
+          <span>Back to Collection</span>
+        </button>
+        
+        <!-- Center Document Details -->
+        <div class="text-center hidden sm:block">
+          <h3 id="read-doc-title" class="font-serif text-lg text-stone-900 font-semibold line-clamp-1">Document Title</h3>
+          <p id="read-doc-author" class="text-xs text-stone-400 italic">Author</p>
+        </div>
+
+        <!-- In-document Word Search -->
+        <div class="relative w-48 sm:w-64">
+          <input 
+            type="text" 
+            id="doc-search-input" 
+            placeholder="Search inside document..." 
+            class="w-full py-1.5 pl-3 pr-8 bg-stone-50 border border-stone-200 rounded text-xs focus:outline-none focus:border-stone-400 focus:bg-white transition-all"
+          >
+          <span id="doc-search-clear" class="absolute inset-y-0 right-0 flex items-center pr-2.5 cursor-pointer text-stone-400 hover:text-stone-700 hidden">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </span>
+          <span id="doc-search-icon" class="absolute inset-y-0 right-0 flex items-center pr-2.5 pointer-events-none text-stone-400">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </span>
+        </div>
+      </div>
+
+      <!-- Reading Panel Layout -->
+      <div class="flex-1 flex overflow-hidden border border-stone-200 rounded-lg bg-[#faf8f5]">
+        <!-- Page Nav Sidebar inside Reading Mode -->
+        <aside class="w-48 border-r border-stone-200 bg-[#f7f4ee] flex flex-col overflow-y-auto p-4 shrink-0">
+          <span class="text-[10px] uppercase tracking-wider font-semibold text-stone-400 mb-3 block">Pages</span>
+          <ul id="pages-list" class="space-y-1 text-sm">
+            <!-- Dynamically populated page list -->
+          </ul>
+        </aside>
+
+        <!-- Main text pane -->
+        <div class="flex-1 flex flex-col overflow-hidden bg-white">
+          <!-- Text Area -->
+          <div id="text-container" class="flex-1 overflow-y-auto px-8 py-10 md:px-12 md:py-14 max-w-3xl mx-auto w-full prose prose-stone">
+            <!-- PDF text content will be rendered here per page -->
+          </div>
+
+          <!-- Footer Pagination -->
+          <div class="border-t border-stone-100 px-6 py-4 bg-stone-50 flex items-center justify-between shrink-0">
+            <button id="prev-page" class="px-4 py-1.5 border border-stone-200 rounded text-xs font-medium text-stone-600 bg-white hover:bg-stone-50 active:bg-stone-100 disabled:opacity-50 disabled:pointer-events-none transition">
+              Previous Page
+            </button>
+            <span id="page-indicator" class="text-xs text-stone-500 font-medium">Page 1 of 1</span>
+            <button id="next-page" class="px-4 py-1.5 border border-stone-200 rounded text-xs font-medium text-stone-600 bg-white hover:bg-stone-50 active:bg-stone-100 disabled:opacity-50 disabled:pointer-events-none transition">
+              Next Page
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Static Footer Links (at bottom of main layout) -->
+    <footer class="w-full max-w-5xl mx-auto border-t border-stone-100 pt-8 mt-16 text-center md:text-left">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 text-xs text-stone-400">
+        <div class="flex justify-center md:justify-start space-x-6">
+          <a href="#" class="hover:text-stone-700 transition">Privacy Policy</a>
+          <a href="#" class="hover:text-stone-700 transition">Terms of Service</a>
+          <a href="#" class="hover:text-stone-700 transition">Accessibility</a>
+          <a href="#" class="hover:text-stone-700 transition">Contact</a>
+        </div>
+        <div>
+          <span>&copy; 2026 Quietude Editorial. All rights reserved.</span>
+        </div>
+      </div>
+    </footer>
+    
+  </main>
+
+</body>
+</html>
